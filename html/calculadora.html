@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de Propinas</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilocalculadora.css">
+</head>
+<body>
+	<div id="contenedor">
+		<header>
+			<div class="titulo">
+				<h1>Calculadora de Propinas</h1>
+			</div>
+		</header>
+		<section>
+			<article>
+				<div class="margen">
+					<div class="fondo">
+						<div>
+							<h2>Calculadora</h2>
+						</div>
+						<div class="contenido">
+						<form>
+							<label>Total a Pagar:</label>
+							<input type="numeric" id="total"
+							value="0" placeholder="0">
+							<br>
+							<br>
+							<br>
+							<label>Porcentaje de Propina:</label>
+							<input type="numeric" id="porcentaje" value="0"placeholder="0">
+							<br>
+							<br>
+							<br>
+							<label>Cantidad de Personas:</label>
+							<input type="numeric" id="cantidad" value="0" placeholder="0">
+						</form>
+						</div>
+						<br>
+						<button class="btn" onclick="calcularPropina()">Calcular</button>
+						<div class="resultado">
+						<form>
+							<label>Propina Total:</label>
+							<input id="propina" type="numeric" name="" placeholder="0">
+							<br>
+							<br>
+							<label>Propina por persona:</label>
+							<input id="pagar" type="numeric" name="" placeholder="0">
+						</form>
+					</div>
+					</div>
+					
+				</div>
+			</article>
+		</section>
+	</div>
+<script type="text/javascript" src="../js/calculadora.js"></script>
+</body>
+</html>
